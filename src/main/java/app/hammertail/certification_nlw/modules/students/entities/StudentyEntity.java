@@ -11,7 +11,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class StudentyEntity {
+
   private UUID id;
   private String email;
   private List<CertificationStudentEntity> certificationsStudentEntity;
+
 }
