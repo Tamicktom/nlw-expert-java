@@ -16,7 +16,7 @@ public class VerifyIfHasCertificationUseCase {
     var result = this.certificationStudentRepository.findByStudentEmailAndTechnology(dto.getEmail(),
         dto.getTechnology());
 
-    if(result.isEmpty()){
+    if (!result.isEmpty()) {
       return true;
     }
 
