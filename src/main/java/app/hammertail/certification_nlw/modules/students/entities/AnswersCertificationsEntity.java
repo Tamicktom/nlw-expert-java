@@ -21,7 +21,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity(name = "answers_certification_students")
 public class AnswersCertificationsEntity {
-
   @Id
   @GeneratedValue(strategy = GenerationType.UUID)
   private UUID id;

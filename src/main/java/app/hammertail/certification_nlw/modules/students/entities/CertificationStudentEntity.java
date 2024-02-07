@@ -20,7 +20,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity(name = "certifications")
 public class CertificationStudentEntity {
-
   @Id
   @GeneratedValue(strategy = GenerationType.UUID)
   private UUID id;
