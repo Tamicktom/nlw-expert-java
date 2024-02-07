@@ -26,14 +26,14 @@ public class AnswersCertificationsEntity {
   @GeneratedValue(strategy = GenerationType.UUID)
   private UUID id;
 
-  @Column(name = "certification_id", insertable = false, updatable = false)
+  @Column(name = "certification_id")
   private UUID certificationID;
 
   @ManyToOne
   @JoinColumn(name = "certification_id", insertable = false, updatable = false)
   private CertificationStudentEntity certificationStudentEntity;
 
-  @Column(name = "student_id", insertable = false, updatable = false)
+  @Column(name = "student_id")
   private UUID studentID;
 
   @ManyToOne
